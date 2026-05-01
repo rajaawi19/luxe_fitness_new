@@ -1,0 +1,30 @@
+{
+  "buildCommand": "bun install && bun run build",
+  "devCommand": "bun run dev",
+  "installCommand": "bun install",
+  "framework": "vite",
+  "nodeVersion": "22.x",
+  "env": {
+    "SUPABASE_URL": {
+      "description": "Supabase project URL"
+    },
+    "SUPABASE_PUBLISHABLE_KEY": {
+      "description": "Supabase publishable API key"
+    },
+    "SUPABASE_SERVICE_ROLE_KEY": {
+      "description": "Supabase service role key (keep secret)"
+    },
+    "STRIPE_SECRET_KEY": {
+      "description": "Stripe secret API key (keep secret)"
+    },
+    "STRIPE_PUBLISHABLE_KEY": {
+      "description": "Stripe publishable API key"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "destination": "/"
+    }
+  ]
+}
