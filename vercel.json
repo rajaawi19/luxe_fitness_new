@@ -3,7 +3,6 @@
   "devCommand": "bun run dev",
   "installCommand": "bun install",
   "framework": "vite",
-  "nodeVersion": "22.x",
   "env": {
     "SUPABASE_URL": {
       "description": "Supabase project URL"
